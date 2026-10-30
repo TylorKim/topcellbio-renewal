@@ -227,6 +227,21 @@ table.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:14.5px;
 /* news */
 .news{background:var(--bg)}
 .news .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;margin-top:50px}
+.press{list-style:none}
+.press li{border-bottom:1px solid var(--line)}
+.press li:last-child{border:0}
+.press a{display:block;padding:14px 0;transition:.2s}
+.press a:hover b{color:var(--blue)}
+.press .meta{display:flex;gap:10px;align-items:center;font-size:12.5px;color:var(--muted);margin-bottom:4px}
+.press .meta em{font-style:normal;font-weight:700;color:var(--navy)}
+.press .pt{font-style:normal;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.press .pt.us{background:var(--blue);color:#fff;border-color:var(--blue)}
+.press b{display:block;font-size:15.5px;color:var(--ink);line-height:1.5}
+.press span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+.press li.hot{background:linear-gradient(90deg,#f3f8ff,transparent);margin:0 -14px;padding:0 14px;border-radius:12px}
+.newsbar{display:inline-flex;gap:10px;align-items:center;margin-bottom:14px;padding:7px 14px 7px 8px;border-radius:999px;background:rgba(94,234,212,.12);border:1px solid rgba(94,234,212,.35);color:#ccfbf1;font-size:13.5px;font-weight:600}
+.newsbar b{background:#5eead4;color:#06302b;border-radius:999px;padding:2px 9px;font-size:11.5px}
+.newsbar:hover{background:rgba(94,234,212,.2)}
 .nlist{list-style:none}
 .nlist li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px}
 .nlist li span{color:var(--ink);font-weight:600}
@@ -360,6 +375,7 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
 <section class="hero" id="top">
   <div class="wrap grid">
     <div>
+      <a href="#news" class="newsbar"><b>NEW</b>2025.12 제노큐어·젠에스와 재생 화장품 3자 MOU 체결 →</a><br>
       <span class="badge"><i></i>Since 2008 · 치아줄기세포 전문 연구기업</span>
       <h1>버려지는 치아 한 개,<br><em>가족의 미래</em>가 됩니다</h1>
       <p>빠지는 유치(젖니)와 사랑니 속 치수(신경)에는 분화능력이 뛰어난 줄기세포가 들어 있습니다. (주)탑셀바이오는 이 세포를 배양·검사해 초저온으로 안전하게 보관하고, 줄기세포 치료제를 연구합니다.</p>
@@ -679,8 +695,10 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
   <div class="wrap">
     <span class="eyebrow">History</span>
     <h2 class="title reveal">2008년부터, 한 길만 걸어왔습니다</h2>
-    <p class="lead reveal">국내 최초 치아줄기세포 벤처인증, 세계 최초 치아줄기세포 심포지엄 개최까지.</p>
+    <p class="lead reveal">국내 최초 치아줄기세포 벤처인증, 세계 최초 치아줄기세포 심포지엄, 그리고 2025년 재생 화장품 3자 협약까지.</p>
     <div class="timeline collapsed" id="tl">
+      <div class="ty reveal"><div class="y">2025</div><ul><li><strong>㈜제노큐어·㈜젠에스와 3자 업무협약(MOU)</strong> 체결, PDRN–줄기세포 배양액 융합 재생 화장품 개발</li><li>협력사 ㈜탑셀바이오헬스, BIO KOREA 2025 참가</li></ul></div>
+      <div class="ty reveal"><div class="y">2024</div><ul><li>협력 법인 <strong>㈜탑셀바이오헬스 설립</strong>, 골수·치아·지방 줄기세포 보관 서비스 협력</li></ul></div>
       <div class="ty reveal"><div class="y">2020</div><ul><li><strong>폐질환 줄기세포 치료제 연구 개시</strong></li></ul></div>
       <div class="ty reveal"><div class="y">2019</div><ul><li><strong>줄기세포 치료제 전임상 개시</strong></li><li>서울성모병원 치과병원 보존과 공동연구</li></ul></div>
       <div class="ty reveal"><div class="y">2018</div><ul><li>특허등록 “줄기세포를 이용한 뇌신경 또는 척수신경 관련질환 개선 또는 치료용 의학 조성물”</li><li>안과질환 줄기세포 치료제 연구 개시</li><li>리디아 여성의원, 돋움의원 협력병원 업무협약</li></ul></div>
@@ -728,16 +746,16 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
     <h2 class="title reveal">탑셀바이오 소식</h2>
     <div class="grid">
       <div class="box reveal">
-        <h3>공지사항 <small>NOTICE</small></h3>
-        <ul class="nlist">
-          <li><span>치료제 연구개발</span><time>2020.04.01</time></li>
-          <li><span>공동연구</span><time>2019.09.15</time></li>
-          <li><span>줄기세포 치료제 전임상 개시</span><time>2019.05.17</time></li>
-          <li><span>협력병원 체결</span><time>2018.10.01</time></li>
-          <li><span>특허등록</span><time>2018.08.10</time></li>
-          <li><span>㈜파브메드 줄기세포 치료제 전략적 공동개발</span><time>2017.10.20</time></li>
-          <li><span>㈜대신증권 계약</span><time>2017.05.25</time></li>
+        <h3>언론 보도 <small>PRESS</small></h3>
+        <ul class="press">
+          <li><a href="https://magazine.hankyung.com/business/article/202603239315b" target="_blank" rel="noopener"><div class="meta"><em>한경비즈니스</em><time>2026.03.24</time><i class="pt">협력사</i></div><b>탑셀바이오헬스, ‘2026 대한민국 NO.1 의료서비스대상’ 줄기세포 보관 부문 수상</b></a></li>
+          <li><a href="https://www.donga.com/news/Economy/article/all/20260223/133401398/1" target="_blank" rel="noopener"><div class="meta"><em>동아일보</em><time>2026.02.23</time><i class="pt">협력사</i></div><b>탑셀바이오헬스, 노원구청에 2년 연속 기부… 고객 참여 나눔까지</b></a></li>
+          <li><a href="https://magazine.hankyung.com/business/article/202601052129b" target="_blank" rel="noopener"><div class="meta"><em>한경비즈니스</em><time>2026.01</time><i class="pt">협력사</i></div><b>탑셀바이오헬스, ‘2026 한국소비자만족지수 1위’ 의료서비스(줄기세포 보관) 부문</b></a></li>
+          <li class="hot"><a href="https://edu.donga.com/news/articleView.html?idxno=101154" target="_blank" rel="noopener"><div class="meta"><em>E동아</em><time>2025.12.31</time><i class="pt us">탑셀바이오</i></div><b>제노큐어·탑셀바이오·젠에스, PDRN–줄기세포 융합 차세대 재생 화장품 3자 MOU 체결</b><span>탑셀바이오가 PDRN 원료와 자사 줄기세포 기술을 결합해 바이알 제조를 맡습니다.</span></a></li>
+          <li><a href="https://www.e-science.co.kr/news/articleView.html?idxno=105098" target="_blank" rel="noopener"><div class="meta"><em>이코노미사이언스</em><time>2025.05.14</time><i class="pt">협력사</i></div><b>탑셀바이오헬스, ‘BIO KOREA 2025’서 줄기세포 보관 기술 선보여</b></a></li>
+          <li><a href="https://news.nate.com/view/20241203n08235" target="_blank" rel="noopener"><div class="meta"><em>브릿지경제</em><time>2024.12.03</time><i class="pt">협력사</i></div><b>탑셀바이오헬스, ㈜탑셀바이오와 협력해 골수 줄기세포 보관 서비스 제공</b></a></li>
         </ul>
+        <p class="src" style="margin-top:14px">* ㈜탑셀바이오헬스(2024년 설립)는 ㈜탑셀바이오와 협력해 줄기세포 보관 서비스를 운영하는 별도 법인입니다.</p>
       </div>
       <div class="box reveal">
         <h3>재생 연구 하이라이트 <small>R&amp;D</small></h3>
@@ -794,7 +812,7 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
       <div class="logo"><div>탑셀바이오<small>TOP CELL BIO INC.</small></div></div>
       <div class="flinks"><a href="#about">회사소개</a><a href="#tooth">치아줄기세포</a><a href="#lab">연구소</a><a href="#faq">FAQ</a><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div>
     </div>
-    <p>(주)탑셀바이오 · 서울특별시 서초구 반포대로 222, 4층 4002호 (반포동, 가톨릭대학교 성의교정 의생명산업연구원)<br>
+    <p>(주)탑셀바이오 · 대표이사 국일 · 서울특별시 서초구 반포대로 222, 4층 4002호 (반포동, 가톨릭대학교 성의교정 의생명산업연구원)<br>
     사업자등록번호 220-87-66946 · 통신판매업신고 2011-서울서대문-0072 · 정보보호책임자 함재연 · 대표전화 02-461-5855</p>
     <p class="disc">※ 본 사이트의 질환 관련 내용은 연구 진행 분야를 소개하는 것으로, 치료 효과를 보장하지 않습니다. 실제 치료 적용은 관련 법령과 임상 절차를 따릅니다.<br>© 2008-2026 Top Cell Bio Inc. All rights reserved.</p>
   </div>
