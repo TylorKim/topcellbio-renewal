@@ -299,6 +299,58 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
 .fab a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(29,100,224,.4)}
 .fab a.top{background:#fff;color:var(--navy);box-shadow:var(--shadow)}
 
+
+/* CEO */
+.ceo{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+.ceo .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;margin-top:50px;align-items:stretch}
+.ceo-card{position:relative;border-radius:28px;padding:44px 40px;background:linear-gradient(150deg,var(--navy) 0%,#12306a 60%,#0f4c81 100%);color:#fff;overflow:hidden}
+.ceo-card::after{content:"\201C";position:absolute;right:26px;top:-30px;font-size:220px;font-weight:800;color:rgba(94,234,212,.12);line-height:1}
+.ceo-card blockquote{font-size:clamp(24px,2.8vw,34px);font-weight:800;line-height:1.35;letter-spacing:-.02em;position:relative;z-index:1}
+.ceo-card blockquote em{font-style:normal;color:#5eead4}
+.ceo-card p{color:rgba(255,255,255,.78);margin-top:18px;font-size:15.5px;position:relative;z-index:1}
+.ceo-sign{display:flex;align-items:center;gap:14px;margin-top:34px;position:relative;z-index:1}
+.ceo-sign .av{flex:0 0 58px;height:58px;font-size:22px;background:linear-gradient(135deg,#5eead4,#3b82f6)}
+.ceo-sign b{display:block;font-size:19px}
+.ceo-sign span{font-size:13.5px;color:rgba(255,255,255,.65)}
+.ceo-points{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ceo-points div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 22px}
+.ceo-points b{display:block;font-size:17px;color:var(--ink);margin:10px 0 6px;letter-spacing:-.01em}
+.ceo-points p{font-size:14.5px;color:var(--muted)}
+.ceo-points .k{font-size:12px;font-weight:800;color:var(--blue);background:var(--sky);padding:4px 10px;border-radius:999px}
+.ceo-src{grid-column:span 2;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:13.5px;color:var(--muted);padding:4px 2px}
+.ceo-src a{display:inline-flex;gap:6px;align-items:center;padding:9px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:600}
+.ceo-src a:hover{border-color:var(--blue);color:var(--blue)}
+/* pipeline */
+.pipeline{background:var(--bg)}
+.core{margin-top:46px;display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+.core-main{background:linear-gradient(135deg,#0b2a5c,#1d64e0);color:#fff;border-radius:26px;padding:38px}
+.core-main .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;background:rgba(255,255,255,.15);padding:5px 12px;border-radius:999px}
+.core-main h3{font-size:clamp(22px,2.4vw,28px);margin:14px 0 10px;letter-spacing:-.02em}
+.core-main p{color:rgba(255,255,255,.82);font-size:15.5px}
+.flow{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;align-items:center}
+.flow span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:9px 14px;border-radius:12px;font-size:14px;font-weight:600}
+.flow i{font-style:normal;color:#5eead4;font-weight:800}
+.core-side{display:grid;gap:14px}
+.core-side div{background:#fff;border-radius:20px;padding:22px 24px;border:1px solid var(--line)}
+.core-side b{display:block;font-size:26px;color:var(--ink);font-weight:800;letter-spacing:-.02em}
+.core-side span{font-size:14px;color:var(--muted)}
+.pipes{margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pipe{background:#fff;border-radius:22px;padding:28px 24px;border:1px solid var(--line);transition:.3s;display:flex;flex-direction:column}
+.pipe:hover{transform:translateY(-5px);box-shadow:var(--shadow2)}
+.pipe .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+.pipe h4{font-size:19px;color:var(--ink);margin-bottom:10px}
+.pipe ul{list-style:none;font-size:14.5px;color:var(--text);flex:1}
+.pipe li{padding:5px 0 5px 14px;position:relative}
+.pipe li::before{content:"";position:absolute;left:0;top:14px;width:5px;height:5px;border-radius:50%;background:var(--mint)}
+.pipe .ev{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+.pipe .ev b{color:var(--blue)}
+.stage{margin-top:26px;background:#fff;border-radius:22px;border:1px solid var(--line);padding:26px 28px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.stage-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.stage-bar div{height:44px;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:700;background:#eef2f7;color:var(--muted)}
+.stage-bar div.on{background:linear-gradient(90deg,var(--blue),var(--mint));color:#fff}
+@media (max-width:1024px){.ceo .grid,.core{grid-template-columns:1fr}.pipes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.ceo-points{grid-template-columns:1fr}.ceo-src{grid-column:auto}.pipes{grid-template-columns:1fr}.ceo-card{padding:32px 24px}.core-main{padding:28px 22px}.stage{grid-template-columns:1fr}.stage-bar div{font-size:11.5px;height:40px}}
+
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
 .reveal.in{opacity:1;transform:none}
 
@@ -352,10 +404,11 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
     <nav aria-label="주 메뉴">
       <ul>
         <li><a href="#about">회사소개</a></li>
+        <li><a href="#ceo">CEO</a></li>
         <li><a href="#tooth">치아줄기세포</a></li>
         <li><a href="#process">보관 절차</a></li>
         <li><a href="#other">기타세포</a></li>
-        <li><a href="#lab">연구소</a></li>
+        <li><a href="#pipeline">연구개발</a></li>
         <li><a href="#news">소식</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -368,7 +421,7 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
   </div>
 </header>
 <div class="mnav" id="mnav">
-  <a href="#about">회사소개</a><a href="#tooth">치아줄기세포</a><a href="#process">보관 절차</a><a href="#other">기타세포 보관</a><a href="#lab">연구소</a><a href="#history">연혁</a><a href="#news">소식</a><a href="#faq">자주 묻는 질문</a><a href="#contact">오시는 길 · 상담</a>
+  <a href="#about">회사소개</a><a href="#ceo">대표 메시지</a><a href="#tooth">치아줄기세포</a><a href="#process">보관 절차</a><a href="#other">기타세포 보관</a><a href="#lab">연구소</a><a href="#pipeline">연구 파이프라인</a><a href="#history">연혁</a><a href="#news">소식</a><a href="#faq">자주 묻는 질문</a><a href="#contact">오시는 길 · 상담</a>
 </div>
 
 <!-- HERO -->
@@ -428,7 +481,7 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
         <p>(주)탑셀바이오는 잠재력이 풍부한 치아 내부의 치수(신경)에서 추출하는 <b>치아줄기세포</b>와 <b>구강 섬유아세포</b>를 장기간 보관하는 서비스를 제공합니다.</p>
         <p>보관된 세포를 이용해 뼈, 연골, 잇몸, 신경, 혈관, 근육, 피부 등의 재생의료와 난치성 질환 연구에 활용하고, 구강 섬유아세포를 피부미용 분야에 적용하는 등 인간의 삶의 질 향상을 경영이념으로 노력하고 있습니다.</p>
         <p>보관한 자녀는 물론 부모, 조부모에게 예상치 못한 질병이나 사고가 생겼을 때, 치료 가능성을 넓혀 줄 중요한 자원이 될 것입니다.</p>
-        <div class="sign">Global Leader · Tooth Stem Cell &amp; Oral Cell<br>주식회사 탑셀바이오</div>
+        <div class="sign">Global Leader · Tooth Stem Cell &amp; Oral Cell<br>주식회사 탑셀바이오 대표이사 국일</div>
       </div>
     </div>
 
@@ -447,6 +500,32 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
         <div class="ic" style="background:#fef3c7"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round"><path d="M12 2.5s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div>
         <h3>미용 · 화장품 원료</h3>
         <ul><li>치아 치수(신경) 줄기세포 배양액</li><li>2012년 미국 화장품 원료집 등재</li><li>2013년 식약처 가이드라인에 따른 독성검사 완료</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CEO -->
+<section class="ceo" id="ceo">
+  <div class="wrap">
+    <span class="eyebrow">CEO Message</span>
+    <h2 class="title reveal">“치아줄기세포가 곧 미래의료다”</h2>
+    <p class="lead reveal">2008년 창업부터 지금까지, 국일 대표가 언론 인터뷰에서 밝혀 온 탑셀바이오의 방향입니다.</p>
+    <div class="grid">
+      <div class="ceo-card reveal">
+        <blockquote>버려지던 치아 속 줄기세포를,<br><em>제대혈·골수처럼</em><br>보관하는 문화를 만들겠습니다.</blockquote>
+        <p>발치된 치아의 줄기세포 보관은 일종의 생물학적 보험입니다. 자신은 물론 가족에게 예상치 못한 질병이나 사고가 생겼을 때 치료 가능성을 넓혀 주는 중요한 자원이 됩니다.</p>
+        <div class="ceo-sign"><div class="av">국</div><div><b>대표이사 국일</b><span>(주)탑셀바이오 · 전 (주)치아줄기세포뱅크 대표</span></div></div>
+      </div>
+      <div class="ceo-points">
+        <div class="reveal"><span class="k">2011 · 심포지엄</span><b>세계 최초 치아줄기세포 심포지엄</b><p>연세치대 강당에서 열린 제1회 심포지엄에 치과·정형외과·피부과 의사 등 150여 명이 참석했습니다.</p></div>
+        <div class="reveal"><span class="k">보관 원칙</span><b>당일 배송 · 즉시 추출 · 2곳 분산</b><p>도착 즉시 줄기세포를 추출·배양해 두 곳에 나누어 보관합니다. 만일의 사태에 대비하고 여러 번 사용할 수 있도록 하기 위해서입니다.</p></div>
+        <div class="reveal"><span class="k">연구 성과</span><b>척수재생 동물실험</b><p>로얄동물메디컬센터와 함께 척수가 손상된 후하지 마비견 3마리에 치아줄기세포를 적용해, 2마리가 거의 정상적으로 걷는 호전을 보였습니다.</p></div>
+        <div class="reveal"><span class="k">왜 치수인가</span><b>“침습 없이 얻는 신경 조직”</b><p>외과적 침습 없이 신경 조직을 얻고 줄기세포를 추출할 수 있는 부위는 자연 탈락하는 치아의 치수뿐이라는 것이 국일 대표의 설명입니다.</p></div>
+        <div class="ceo-src reveal">인터뷰 원문
+          <a href="https://blog.naver.com/bestcell7/120136470253" target="_blank" rel="noopener">세미나리뷰 · 2011.07 CEO 인터뷰 ↗</a>
+          <a href="https://www.dentalarirang.com/news/articleView.html?idxno=4801" target="_blank" rel="noopener">덴탈아리랑 · 업체 하이라이트 ↗</a>
+        </div>
       </div>
     </div>
   </div>
@@ -644,7 +723,7 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
         <p class="lead">치아 치수(신경) 줄기세포와 구강 내 세포를 장기간 보관하고, 이를 이용해 신경·자가면역·치과 질환, 상처치유, 피부개선 치료제를 연구·개발합니다.</p>
         <div class="labinfo">
           <div><b>설립일</b><span>2008. 06. 03.</span></div>
-          <div><b>위치</b><span>서울시 서초구 반포대로 222, 4층 4002호 (가톨릭대학교 성의교정 의생명산업연구원)</span></div>
+          <div><b>위치</b><span>서울시 서초구 반포대로 222, 가톨릭대학교 성의교정 (옴니버스파크 입주기업)</span></div>
           <div><b>주요 사업</b><span>줄기세포 치료제 개발 · 줄기세포 및 면역세포 보관 · 화장품 원료(줄기세포 배양액) 개발</span></div>
         </div>
       </div>
@@ -687,6 +766,42 @@ footer .disc{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42)}
         </ol>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- PIPELINE -->
+<section class="pipeline" id="pipeline">
+  <div class="wrap">
+    <span class="eyebrow">R&amp;D Pipeline</span>
+    <h2 class="title reveal">치수 줄기세포 하나로,<br>여기까지 연구합니다</h2>
+    <p class="lead reveal">가톨릭대학교 옴니버스파크 입주기업으로서 치아 치수(신경) 유래 줄기세포와 배양액을 기반으로 다음 분야를 연구·개발하고 있습니다.</p>
+
+    <div class="core">
+      <div class="core-main reveal">
+        <span class="tag">CORE TECHNOLOGY</span>
+        <h3>줄기세포 컨디션드 배지 분말</h3>
+        <p>줄기세포 배양액의 유효성분을 고농축 분말로 만드는 독자 제조 기술입니다. 액상 배양액보다 유효성분 농도와 안정성이 높고 유통이 쉬워 의약품·화장품 원료로 활용됩니다.</p>
+        <div class="flow"><span>치아 치수 줄기세포</span><i>→</i><span>배양액</span><i>→</i><span>고농축 분말</span><i>→</i><span>치료제 · 화장품 원료</span></div>
+      </div>
+      <div class="core-side">
+        <div class="reveal"><b>대량생산 특허</b><span>컨디션드 배지 분말 제조방법 · 국내(2012) + PCT 국제출원(2013)</span></div>
+        <div class="reveal"><b>2019 전임상 개시</b><span>줄기세포 치료제 전임상 단계 진입</span></div>
+        <div class="reveal"><b>2025 3사 MOU</b><span>PDRN–줄기세포 융합 재생 화장품 바이알 제조 담당</span></div>
+      </div>
+    </div>
+
+    <div class="pipes">
+      <div class="pipe reveal"><div class="ic" style="background:#ede9fe">🧠</div><h4>신경계</h4><ul><li>뇌경색</li><li>척수 재생</li></ul><div class="ev"><b>근거</b> 뇌신경·척수신경 질환 조성물 특허등록(2018), 척수재생 동물실험</div></div>
+      <div class="pipe reveal"><div class="ic" style="background:#e0f2fe">🫁</div><h4>호흡기</h4><ul><li>폐섬유화 등 폐질환</li><li>급성 천식</li></ul><div class="ev"><b>근거</b> 폐질환 줄기세포 치료제 연구 개시(2020)</div></div>
+      <div class="pipe reveal"><div class="ic" style="background:#fce7f3">✨</div><h4>피부 · 모발</h4><ul><li>아토피</li><li>피부 재생</li><li>탈모</li></ul><div class="ev"><b>근거</b> 아토피 개선 조성물 특허등록(2014), 종근당 탈모개선 공동연구(2016)</div></div>
+      <div class="pipe reveal"><div class="ic" style="background:#dcfce7">🦷</div><h4>치과 · 골</h4><ul><li>치조골 재생</li><li>골 재생</li></ul><div class="ev"><b>근거</b> 골 재생용 조성물 특허출원(2012), 서울성모병원 치과병원 공동연구(2019)</div></div>
+    </div>
+
+    <div class="stage reveal">
+      <div><b style="color:var(--ink);font-size:17px">개발 단계</b><br><span style="font-size:13px;color:var(--muted)">회사 발표 기준</span></div>
+      <div class="stage-bar"><div class="on">기초연구</div><div class="on">전임상 (2019~)</div><div>임상</div><div>허가</div></div>
+    </div>
+    <p class="src" style="margin-top:12px">출처: 가톨릭대학교 산학협력단 옴니버스파크 입주기업 현황, 기업정보(RnDcircle), 회사 연혁·특허 자료. 연구 분야는 개발 중인 내용으로 치료 효과를 의미하지 않습니다.</p>
   </div>
 </section>
 
